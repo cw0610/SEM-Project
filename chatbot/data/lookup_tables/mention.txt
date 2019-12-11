@@ -1,0 +1,39 @@
+first
+second
+third
+fourth
+fifth
+1st
+2nd
+3rd
+4th
+5th
+last
+final
+tomorrow
+today
+yesterday
+last monday
+last tuesday
+last wednesday
+last thursday
+last friday
+last saturday
+last sunday
+monday
+tuesday
+wednesday
+thursday
+friday
+saturday
+sunday
+next monday
+next tuesday
+next wednesday
+next thursday
+next friday
+next saturday
+next sunday
+next week
+this week
+last week
