@@ -1,0 +1,69 @@
+---
+actions:
+  - utter_greet
+  - utter_ok
+  - action_searching
+  - action_fallback
+forms:
+  - searching_form
+intents: 
+  - greet
+  - searching
+  - searching_form
+slots:
+  attribute_faq:
+    type: unfeaturized
+  key_faq:
+    type: unfeaturized
+  attribute:
+    auto_fill: false
+    type: unfeaturized
+  key_attribute:
+    auto_fill: false
+    type: unfeaturized
+  key:
+    auto_fill: false
+    type: unfeaturized
+templates :
+  utter_ask_attribute:
+    - buttons:
+        - payload: 'BrandName'
+          title: Vehicle Brand
+        - payload: 'VehiclesTitle'
+          title: Vehicle Name
+        - payload: 'PricePerDay'
+          title: Price Per Day
+        - payload: 'ModelYear'
+          title: Vehicle Model
+        - payload: 'FuelType'
+          title: Fuel Type
+        - payload: 'SeatingCapacity'
+          title: Seating Capacity
+      text: 'What information do you want me to search?'
+  utter_ask_key_attribute:
+    - buttons:
+        - payload: 'BrandName'
+          title: Vehicle Brand
+        - payload: 'VehiclesTitle'
+          title: Vehicle Name
+        - payload: 'PricePerDay'
+          title: Price Per Day
+        - payload: 'ModelYear'
+          title: Vehicle Model
+        - payload: 'FuelType'
+          title: Fuel Type
+        - payload: 'SeatingCapacity'
+          title: Seating Capacity
+      text: 'Please select another attribute that you may know a little bit.'
+  utter_ask_key:
+    - text: 'Please provide a keyword for your selected attribute :'
+  utter_greet:
+    - buttons:
+        - payload: /searching_form
+          title: "I want to search vehicle."
+      text: "Good day! I'm Ordis, a chatbot that can help search your dream vehicle!"
+  utter_ok:
+    - text: 'Alright'
+    - text: 'Ok'
+    - text: 'No problem'
+    - text: 'Roger that'
